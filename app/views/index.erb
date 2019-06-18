@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>index</title>
+    </head>
+    <body>
+        <h2>Articles</h2>
+        <% @articles.each do |article| %>
+            <p><a href = '/articles/<%=article.id%>'><%=article.title%></a></p>
+        <% end %>
+    </body>
+</html>
+
+    
